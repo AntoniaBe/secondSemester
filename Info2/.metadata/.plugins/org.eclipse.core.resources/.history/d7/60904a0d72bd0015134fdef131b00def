@@ -1,0 +1,33 @@
+package cbs;
+
+//@author Lisa Wechmann (0549354) , Antonia Berger (550486)
+//Info 2 
+//21.04.2015
+
+public class Customer {
+
+	private String customersName;
+	private String customersNumber;
+
+	 
+	 
+
+	public Customer(String customersName, String customersNumber)
+	{
+	  this.customersName = customersName;
+	  this.customersNumber = customersNumber;
+	 }
+	    
+//@ return 	The name of a customer.
+	 public String getCustomersName()
+	 {
+	   return customersName;
+	  }
+	 
+//@ return The number of a customer.
+	 public String getCustomersNumber()
+	 {
+	   return customersNumber;
+	  }
+
+}

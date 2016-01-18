@@ -1,0 +1,10 @@
+package reversePolishNotation;
+
+//@author Lisa Wechmann (0549354) , Antonia Berger (550486)
+
+public class Underflow extends Exception 
+{
+
+	private static final long serialVersionUID = 6551591962766598233L;
+
+}

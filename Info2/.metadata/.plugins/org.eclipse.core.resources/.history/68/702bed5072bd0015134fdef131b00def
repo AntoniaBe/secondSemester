@@ -1,0 +1,30 @@
+package src;
+
+//@author Lisa Wechmann (0549354) , Antonia Berger (550486)
+//Info 2 
+//21.04.2015
+
+public class Seat {
+	
+	private int row;
+	private int column;
+	
+
+	public Seat(int row, int column){
+		
+		this.row = row;
+		this.column = column;
+	}
+
+//@ return a row.	
+	public int getRow(){
+		
+		return this.row;
+	}
+	
+//@ return a column.
+	public int getColumn() {
+		
+		return this.column;
+	}
+}

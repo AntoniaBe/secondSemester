@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;recursiveTriangle&apos; to &apos;src&apos;&#x0D;&#x0A;- Original project: &apos;RecursiveTriangle&apos;&#x0D;&#x0A;- Original element: &apos;RecursiveTriangle/recursiveTriangle&apos;&#x0D;&#x0A;- Renamed element: &apos;RecursiveTriangle/src&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;recursiveTriangle&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/&lt;recursiveTriangle" name="src" qualified="false" references="true" stamp="1453074147084" textual="false" version="1.0"/>
+</session>

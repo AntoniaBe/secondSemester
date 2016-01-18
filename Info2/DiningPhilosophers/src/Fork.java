@@ -1,0 +1,46 @@
+package src;
+public class Fork {
+
+	private Philosopher reservedBy;
+	private Philosopher takenBy;
+
+	public synchronized void take(Philosopher philosopher) {
+		if (takenBy != null) {
+			if (philosopher != takenBy)
+				this.reserve(philosopher);
+			{
+
+			}
+		} else {
+			this.takenBy = philosopher;
+		}
+
+	}
+
+	private void reserve(Philosopher philosopher) {
+
+		Logger.printOut("Philosopher " + philosopher.getName()
+				+ " has to wait for a fork.");
+		this.reservedBy = philosopher;
+		try {
+			this.wait();
+		} catch (InterruptedException e) {
+
+			e.printStackTrace();
+		}
+
+		this.takenBy = null;
+		this.take(philosopher);
+
+	}
+
+	public synchronized void release(Philosopher philosopher) {
+
+		this.takenBy = null;
+		if (this.reservedBy != null) {
+
+			this.notifyAll();
+		}
+	}
+
+}
